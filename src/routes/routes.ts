@@ -2,8 +2,8 @@ import { lazy } from "react";
 import { paths } from "./paths";
 
 const Home = lazy(() => import("@pages/Home"));
-const Favorites = lazy(() => import("@pages/Favorites"));
-const Detail = lazy(() => import("@pages/Detail"));
+const Favorites = lazy(() => import("@/pages/favorites/Favorites"));
+const Detail = lazy(() => import("@/pages/detail/Detail"));
 const Login = lazy(() => import("@pages/Login"));
 
 export type RouteProps = {

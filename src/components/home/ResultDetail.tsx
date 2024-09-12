@@ -1,9 +1,9 @@
 import React from "react";
 import { WeatherApiResponse } from "@/types/currentWeather";
 import { Typography, Box } from "@mui/material";
-import HowItWorks from "./HowItWorks";
-import { WeatherCard } from "../cards/WeatherCard/WeatherCard";
-import { Loader } from "../loaders";
+import { Loader } from "@/components/loaders";
+import HowItWorks from "./HowItWorks/HowItWorks";
+import { WeatherCard } from "@/components/cards";
 
 interface SearchResultProps {
   data: WeatherApiResponse | undefined;
