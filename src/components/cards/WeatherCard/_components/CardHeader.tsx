@@ -19,7 +19,7 @@ export const CardHeader: React.FC<Props> = ({ location, current }) => {
 
   return (
     <Box>
-      <Typography variant={isDesktop ? "h4" : "h5"} gutterBottom>
+      <Typography variant="h5" gutterBottom>
         {location.name}, {location.region}, {location.country}
       </Typography>
       <Box display="flex" alignItems="center" mb={2}>

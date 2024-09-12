@@ -33,12 +33,11 @@ export const WeatherCard: React.FC<Props> = ({ data }) => {
       sx={{
         width: "100%",
         maxWidth: isDesktop ? 600 : 360,
-        height: isDesktop ? 550 : 450,
+        height: isDesktop ? 550 : 500,
         position: "relative",
         marginTop: 0,
         display: "flex",
         flexDirection: "column",
-        overflow: "hidden",
       }}
     >
       <CardContent
