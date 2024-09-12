@@ -4,6 +4,9 @@ export const SplashScreen: React.FC = () => {
   return (
     <Box
       sx={{
+        position: "fixed",
+        top: 0,
+        left: 0,
         display: "flex",
         height: "100vh",
         width: "100vw",
