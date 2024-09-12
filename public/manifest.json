@@ -1,0 +1,11 @@
+{
+  "name": "Weather App",
+  "short_name": "Weather",
+  "description": "Una aplicación del clima que te muestra el pronóstico del tiempo de tus ciudades favoritas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0077FF",
+  "orientation": "portrait",
+  "lang": "es"
+}
