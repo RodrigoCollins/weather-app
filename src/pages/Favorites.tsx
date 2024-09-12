@@ -10,19 +10,19 @@ const Favorites: React.FC = () => {
   const { favorites } = useFavoritesContext();
   const { favoriteWeatherData, isLoading, error } = useFavorites(favorites);
 
+  if (isLoading) return <Loader />;
+  if (error)
+    return (
+      <Box mt={3}>
+        <Alert severity="error">{error}</Alert>
+      </Box>
+    );
+
   return (
     <Box sx={{ paddingBottom: 4, paddingTop: 2 }}>
       <Typography variant="h5" gutterBottom>
         Ciudades Favoritas
       </Typography>
-
-      {isLoading && <Loader />}
-
-      {error && (
-        <Box mt={3}>
-          <Alert severity="error">{error}</Alert>
-        </Box>
-      )}
 
       {!isLoading && !error && favoriteWeatherData?.length === 0 && (
         <HelperText />
