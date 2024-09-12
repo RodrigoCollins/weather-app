@@ -1,8 +1,7 @@
 import React from "react";
-import { Typography, Box, Avatar, Paper, LinearProgress } from "@mui/material";
+import { Typography, Box, Avatar, Paper } from "@mui/material";
 import { CurrentWeather as CurrentWeatherType } from "@/types/currentWeather";
 import {
-  WbSunny as WbSunnyIcon,
   Air as AirIcon,
   Opacity as PressureGageIcon,
   Grain as GrainIcon,

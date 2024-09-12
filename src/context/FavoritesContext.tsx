@@ -1,5 +1,5 @@
 import { useSessionStorage } from "@/hooks/useSessionStorage";
-import React, { createContext, useContext } from "react";
+import React, { createContext } from "react";
 
 interface FavoritesContextProps {
   favorites: string[];
@@ -8,17 +8,9 @@ interface FavoritesContextProps {
   isFavorite: (city: string) => boolean;
 }
 
-const FavoritesContext = createContext<FavoritesContextProps | undefined>(
-  undefined
-);
-
-export const useFavoritesContext = () => {
-  const context = useContext(FavoritesContext);
-  if (!context) {
-    throw new Error("useFavorites debe usarse dentro de FavoritesProvider");
-  }
-  return context;
-};
+export const FavoritesContext = createContext<
+  FavoritesContextProps | undefined
+>(undefined);
 
 interface FavoritesProviderProps {
   children: React.ReactNode;

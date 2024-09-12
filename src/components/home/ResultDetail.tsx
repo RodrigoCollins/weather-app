@@ -1,6 +1,6 @@
 import React from "react";
 import { WeatherApiResponse } from "@/types/currentWeather";
-import { Typography, CircularProgress, Box } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import HowItWorks from "./HowItWorks";
 import { WeatherCard } from "../cards/WeatherCard";
 import { Loader } from "../loaders";

@@ -1,10 +1,10 @@
 import { WeatherApiResponse } from "@/types/currentWeather";
-import { publicAxiosInstance } from "./axios";
+import { privateAxiosInstance } from "./axios";
 import { CURRENT_WEATHER } from "./constants";
 
 export const fetchCurrentWeather = async (query: string) => {
   try {
-    const response: WeatherApiResponse = await publicAxiosInstance.get(
+    const response: WeatherApiResponse = await privateAxiosInstance.get(
       CURRENT_WEATHER,
       {
         params: { q: query },

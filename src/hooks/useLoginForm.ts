@@ -10,17 +10,21 @@ interface FormValues {
 
 interface FormErrors {
   email: string;
+  password: string;
 }
 
 export const useLoginForm = () => {
   const navigate = useNavigate();
   const { login } = useAuth();
   const [values, setValues] = useState<FormValues>({ email: "", password: "" });
-  const [errors, setErrors] = useState<FormErrors>({ email: "" });
+  const [errors, setErrors] = useState<FormErrors>({ email: "", password: "" });
 
   const validateEmail = (email: string): boolean => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
+  };
+  const validatePassword = (password: string): boolean => {
+    return password.trim().length > 0;
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -36,11 +40,14 @@ export const useLoginForm = () => {
 
     const newErrors: FormErrors = {
       email: validateEmail(values.email) ? "" : "Email no válido",
+      password: validatePassword(values.password)
+        ? ""
+        : "Ingrese su contraseña",
     };
 
     setErrors(newErrors);
 
-    if (!newErrors.email) {
+    if (!newErrors.email || !newErrors.password) {
       login();
       navigate(paths.home);
     }

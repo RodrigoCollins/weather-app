@@ -50,7 +50,6 @@ export const SearchForm: React.FC<SearchFormProps> = ({
         disabled={isLoading}
         size="small"
         required
-        aria-required="true"
         aria-label="Campo de búsqueda para el clima por ciudad"
         sx={{ minWidth: { xs: 250, md: 400 } }}
       />

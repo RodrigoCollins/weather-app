@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, CircularProgress, Alert } from "@mui/material";
+import { Box, Typography, Alert } from "@mui/material";
 import { useFavorites } from "@/hooks";
 import { WeatherCard } from "@/components/cards";
 import { HelperText } from "@/components/favorites";

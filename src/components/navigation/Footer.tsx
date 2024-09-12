@@ -3,12 +3,12 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import HomeIcon from "@mui/icons-material/Home";
 import React from "react";
-import { Paper, useMediaQuery } from "@mui/material";
+import { Paper, Theme, useMediaQuery } from "@mui/material";
 import { useLocation, useNavigate } from "react-router-dom";
 import { paths } from "@/routes/paths";
 
 export const Footer: React.FC = () => {
-  const upMd = useMediaQuery((theme: any) => theme.breakpoints.up("md"));
+  const upMd = useMediaQuery((theme: Theme) => theme.breakpoints.up("md"));
   const location = useLocation();
   const navigate = useNavigate();
 

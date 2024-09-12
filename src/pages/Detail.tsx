@@ -1,7 +1,7 @@
 import React from "react";
 import { useFutureWeather } from "@/hooks";
 import { useParams } from "react-router-dom";
-import { Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { CurrentWeather, Forecast, LocationDetails } from "@/components/detail";
 import { Loader } from "@/components/loaders";
 
