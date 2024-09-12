@@ -47,7 +47,7 @@ export const useLoginForm = () => {
 
     setErrors(newErrors);
 
-    if (!newErrors.email || !newErrors.password) {
+    if (!newErrors.email && !newErrors.password) {
       login();
       navigate(paths.home);
     }
