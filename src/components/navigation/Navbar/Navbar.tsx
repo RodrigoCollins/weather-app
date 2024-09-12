@@ -7,17 +7,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Link, useNavigate } from "react-router-dom";
-
-const navItems = [
-  {
-    text: "Inicio",
-    path: paths.home,
-  },
-  {
-    text: "Favoritos",
-    path: paths.favorites,
-  },
-];
+import { navItems } from "./_utils/navItems";
 
 export const Navbar: React.FC = () => {
   const navigate = useNavigate();
