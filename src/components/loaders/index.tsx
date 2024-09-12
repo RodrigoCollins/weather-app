@@ -1,2 +1,2 @@
-export { Loader } from "./Loader";
-export { SplashScreen } from "./SplashScreen";
+export { Loader } from "./Loader/Loader";
+export { SplashScreen } from "./SplashScreen/SplashScreen";
