@@ -1,4 +1,5 @@
-import React, { createContext, useState, useEffect } from "react";
+import { useSessionStorage } from "@/hooks";
+import React, { createContext } from "react";
 
 interface AuthContextProps {
   loggedIn: boolean;
@@ -13,14 +14,7 @@ export const AuthContext = createContext<AuthContextProps | undefined>(
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [loggedIn, setLoggedIn] = useState<boolean>(() => {
-    const storedStatus = sessionStorage.getItem("loggedIn");
-    return storedStatus ? JSON.parse(storedStatus) : false;
-  });
-
-  useEffect(() => {
-    sessionStorage.setItem("loggedIn", JSON.stringify(loggedIn));
-  }, [loggedIn]);
+  const [loggedIn, setLoggedIn] = useSessionStorage<boolean>("loggedIn", false);
 
   const login = () => {
     setLoggedIn(true);
