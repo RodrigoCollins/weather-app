@@ -5,6 +5,7 @@ const Home = lazy(() => import("@pages/home/Home"));
 const Favorites = lazy(() => import("@/pages/favorites/Favorites"));
 const Detail = lazy(() => import("@/pages/detail/Detail"));
 const Login = lazy(() => import("@pages/login/Login"));
+const NotFound = lazy(() => import("@/pages/notfound/NotFound"));
 
 export type RouteProps = {
   path: string;
@@ -61,6 +62,16 @@ export const routes: Route[] = [
     },
     layoutProps: {
       name: "Ingresar",
+    },
+  },
+  {
+    routeProps: {
+      path: paths.notFound,
+      element: NotFound,
+      private: true,
+    },
+    layoutProps: {
+      name: "No encontrado",
     },
   },
 ];

@@ -1,21 +1,16 @@
 import React from "react";
 import { useFutureWeather } from "@/hooks";
 import { useParams } from "react-router-dom";
-import { Typography } from "@mui/material";
 import { CurrentWeather, Forecast, LocationDetails } from "@/components/detail";
 import { Loader } from "@/components/loaders";
+import NotFound from "../notfound/NotFound";
 
 const Detail: React.FC = () => {
   const { cityName } = useParams();
   const { futureForecast, isLoading, error } = useFutureWeather(cityName);
 
   if (isLoading) return <Loader />;
-  if (error)
-    return (
-      <Typography variant="h6" color="error">
-        Error al cargar los datos
-      </Typography>
-    );
+  if (error) return <NotFound />;
   if (!futureForecast) return null;
 
   const { location, current, forecast } = futureForecast;

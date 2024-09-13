@@ -37,6 +37,6 @@ describe("Detail Page", () => {
       </Router>
     );
 
-    expect(screen.getByText(/Error al cargar los datos/i)).toBeInTheDocument();
+    expect(screen.getByText(/¡Ups! Página no encontrada/i)).toBeInTheDocument();
   });
 });

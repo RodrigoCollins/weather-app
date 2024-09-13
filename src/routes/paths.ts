@@ -3,4 +3,5 @@ export const paths = {
   favorites: "/favorites",
   detail: "/detail/:cityName",
   login: "/login",
+  notFound: "/*",
 };
