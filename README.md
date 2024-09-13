@@ -23,6 +23,7 @@ Weather App es una aplicación de pronóstico del tiempo desarrollada en ReactJS
 
 ## Tecnologías Utilizadas
 
+- **Vite**: Utilizado como herramienta de construcción y desarrollo. A diferencia de Create React App (CRA), Vite ofrece una experiencia de desarrollo mucho más rápida gracias a su arquitectura basada en módulos ES. Esto resulta en tiempos de arranque más cortos y actualizaciones instantáneas en el navegador, lo que mejora la productividad durante el desarrollo.
 - **React Router DOM**: Utilizado para el enrutamiento de la aplicación.
 - **Material-UI**: Empleado para diseñar los componentes de la interfaz.
 - **React Context**: Implementado para manejar el estado global de la aplicación
@@ -53,9 +54,14 @@ Weather App es una aplicación de pronóstico del tiempo desarrollada en ReactJS
    ```
 
 4. **Ejecutar la Aplicación**
+
    ```bash
    npm run dev
    ```
+
+   Esto lanzará la aplicación en modo de desarrollo 🚀. Si todo está correcto, estará disponible en tu navegador en la siguiente dirección:
+
+   🌐 http://localhost:5173
 
 ## Roadmap de Próximas Funcionalidades
 
@@ -74,6 +80,22 @@ Estas son algunas de las funcionalidades que planeamos implementar en futuras ve
 
 Si tienes sugerencias adicionales o ideas para nuevas funcionalidades, no dudes en abrir un issue en [GitHub](https://github.com/RodrigoCollins/weather-app) para compartirlas con nosotros.
 
+## Cómo Contribuir
+
+¡Nos encantaría recibir tus contribuciones! Sigue estos pasos para comenzar:
+
+1. Haz un fork del proyecto.
+2. Crea una rama para tu funcionalidad o corrección (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y asegúrate de que el código sigue el estilo del proyecto.
+4. Realiza pruebas locales y asegúrate de que todo funciona correctamente.
+5. Abre un pull request y describe los cambios que has realizado.
+
+Asegúrate de seguir los lineamientos del proyecto, y no dudes en consultar la sección de **issues** para ver cómo puedes ayudar.
+
 ## Demo
 
-Puedes ver una demostración en vivo de la aplicación desplegada [aquí] (https://66e3560bdfff053231ea9d84--stupendous-taiyaki-b4d0eb.netlify.app/)
+Puedes ver una demostración en vivo de la aplicación desplegada haciendo clic en el siguiente enlace:
+
+🌐 [Ver Demo en Vivo](https://66e3a21ede091577c9a8e97e--celebrated-cat-ed1a58.netlify.app/)
+
+¡Explora la Weather App y consulta el clima de tus ciudades favoritas! ☀️🌧️❄️
