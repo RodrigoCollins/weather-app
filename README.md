@@ -34,7 +34,7 @@ Weather App es una aplicación de pronóstico del tiempo desarrollada en ReactJS
 1. **Clonar el Repositorio**
 
    ```bash
-   git clone https://github.com/tu-usuario/weather-app.git
+   git clone https://github.com/RodrigoCollins/weather-app.git
    cd weather-app
 
    ```
